@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100dvh;
+    line-height: 1.6;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: hidden;
+}
+
+ .hero-image-text h2 {
+    font-weight: 500;
+    font-size: 16px;
+    color: #fafaff;
+}
+
+
+.hero-image {
+    position: relative;
+    text-align: center;
+    background-image: url(https://cdn.pixabay.com/photo/2023/07/25/19/47/milky-way-8149815_1280.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 50dvh;
+}
+
+.hero-image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: azure;
+}
+
+.button {
+    background-color: #f3974e;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    padding: 4px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.home-btn {
+    background-color: black;
+    color: azure;
+    border: 2px solid #f3974e;
+}
+
+.home-btn:hover {
+    background-color: #ebb283;
+    color: azure;
+}
+
+.navigation-bar {
+    background-color: rgb(5, 5, 5);
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    float: right;
+    margin: 10px;
+    cursor: pointer;
+    
+}
+/* Basic menu hidden by default */
+#menu {
+    width: 100%;
+    min-height: 50dvh;
+    position: absolute;
+    top: 58.5%;
+    left: 0;
+    display: none;
+}
+
+/* When menu is active */
+#menu.show {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: center;
+    background-color: rgb(30, 29, 29);
+}
+
+/* Hamburger styling just for example */
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    display: none;
+    background-color: #f3974e;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.menu-home-btn {
+    width: 50%;
+    z-index: 2;
+    margin: 10px auto;
+}
+.change .bar1 {
+    transform: translate(0, 11px) rotate(45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(-45deg);
+}
+/*End of hamburger*/
+
+main {
+    max-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*main content*/
+.right-container {
+    max-width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    margin: 10px;
+    overflow: hidden;
+    gap: 10px;
+}
+
+aside {
+    max-width: 33%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    overflow: hidden;
+    border-right: 1px solid black;
+    background-color: rgb(173, 198, 219);
+}
+
+aside h3 {
+    text-align: center;
+}
+aside p {
+    text-wrap: wrap;
+    padding: 20px;
+    margin: 10px;
+    text-align: left;
+}
+
+address {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 4px 0;
+}
+
+address a {
+    margin: 2px 0;
+    padding: 4px 0;
+    color: black;
+    text-decoration: none;
+}
+
+address a:hover {
+    text-decoration: underline;
+}
+
+.available {
+    text-align: center;
+    font-size: 14px;
+    padding: 20px;
+    margin: 10px 0;
+}
+aside img {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    box-shadow: 0px 10px 10px rgba(19, 19, 19, 0.768);
+}
+
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+
+footer ul li {
+    display: block;
+    list-style-type: none;
+    padding: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    font-size: 20px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background-color: #ebb283;
+    color: rgb(0, 0, 0);
+}
+
+footer p {
+    text-align: center;
+}
+
+
+@media screen and (max-width: 400px) {
+    .home-btn {
+            display: none;
+        }
+        .bar1, .bar2, .bar3 {
+            display: block;
+        } 
+
+    h2, h3, h4, p, address{
+        text-align: center;
+    }
+
+    h1 {
+        text-align: center;
+        line-height: 1;
+    }
+
+    aside {
+        max-width: 100%;
+        margin: 0 auto;
+        border-bottom: 1px solid black;
+    }
+    
+    aside img {
+        width: 250px;
+        height: auto;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px 0;
+    }
+
+}

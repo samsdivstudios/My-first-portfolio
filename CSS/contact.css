@@ -1,0 +1,35 @@
+form {
+    width: 300px;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: blue;
+    overflow: hidden;
+}
+
+label, input, textarea, button {
+    width: 200px;
+    display: block;
+    overflow: hidden;
+    padding: 6px 16px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 10px;
+}
+
+textarea {
+    width: 200px;
+    height: 100px;
+}
+
+form button {
+    font-size: 10px;
+    font-weight: 600;
+    width: 100px;
+    padding: 6px 14px;
+    border-radius: 10px;
+    border: none;
+}
+
+
+  

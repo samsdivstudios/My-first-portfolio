@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="/CSS/contact.css">
+    <title>Contact me</title>
+</head>
+<body>
+    <div class="hero-image">
+        <div class="hero-image-text">
+            <h1>Building my future One line of code at a time</h1>
+            <h2>Front-end Developer in training</h2>
+        </div>
+    </div>
+
+    <div class="navigation-bar">
+        <button class="button home-btn" onclick="window.location.href='/index.html'">Home</button>
+        <button class="button home-btn" onclick="window.location.href='/projects.html'">Projects</button>
+        <button class="button home-btn" onclick="window.location.href='/about.html'">About me</button>
+    <div class="container" onclick= "toggleMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    </div>
+    <div id="menu">
+        <button class="button menu-home-btn" onclick="window.location.href='/index.html'">Home</button>
+        <button class="button menu-home-btn" onclick="window.location.href='/projects.html'">Projects</button>
+        <button class="button menu-home-btn" onclick="window.location.href='/about.html'">About Me</button>
+    </div>
+
+    
+
+    <main>
+        
+        <aside>
+        <div class="left-container">
+        <h3>A little about me</h3>
+        
+        <img src="/Images/me.JPEG" alt="Me at Orcombe point Exmouth, uk in august 2025.">
+
+        <p>I’m Sam, a front-end developer in training with a love for design, digital art, and creating clean, functional websites.</p>
+        <br>
+        
+        <h3>More text</h3>
+        
+        <p>When I’m not coding, I’m usually spending time with my son, exploring other developers’ portfolios for inspiration, or working on my 12-step recovery program. These parts of my life keep me motivated, focused, and always looking for ways to grow — both personally and as a developer.</p>
+
+        <div class="imgage-container">
+          <img src="/Images/facebook_design-clone.jpg" alt="This a clone of Facebook that I created in figma.">
+          <img src="/Images/snippet.jpg" alt="Snippet of a table that I used in cloning Wikapedia page.">
+          <img src="/Images/family.JPG" alt="Me, my partner and son in Taunton.">
+        </div>
+   
+        <h3>Contact me</h3>
+        <p class="available">Available for small projects, collaborations, and learning opportunities.</p>
+
+        <address>
+          Exeter, Uk
+          <a href="mailto:Sam.Walsh95@outlook.com">Email: Sam.Walsh95@outlook.com</a>
+          <a href="tel:+447342206303">Mobile: 07342206303</a>
+          <a href="https://github.co<m/samsdivstudios" target="_blank" rel="noopener noreferrer">github: samsdivstudios</a>
+          <a href="https://www.linkedin.com/in/sam-walsh95/" target="_blank" rel="noopener noreferrer">Linkedin: sam-walsh95</a>
+        </address>
+        
+    </div>
+    </aside>
+
+    <div class="right-container">
+        <h2>Contact Me</h2>
+        <section>
+            <article>
+                <p>Let’s connect. If you’d like to reach out—whether it’s about a project idea, feedback on my work, or just to say hello—please use the form below. I’ll respond as quickly as I can.</p>
+            </article>
+    
+                <form action="send.php" method="POST" novalidate>
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" autocomplete="name" required>
+
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" autocomplete="email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <br>
+                    <button type="submit" value="send message">Send message</button>
+                </form>
+            
+        </section>
+    </div>
+
+    <script src="/JS/main.js"></script>
+</body>
+</html>
